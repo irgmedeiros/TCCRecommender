@@ -140,7 +140,7 @@ class UserBasedRecommender(object):
                     simSums[item] += abs(sim)
 
         # Create the normalized list
-        rankings = [(person_ratings + (total / simSums[item]), item) for item, total in totals.items() if simSums != 0]
+        rankings = [(mean_person + (total / simSums[item]), item) for item, total in totals.items() if simSums != 0]
 
         # Return the sorted list
         rankings.sort()
