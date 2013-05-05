@@ -1,5 +1,8 @@
 *.py[cod]
 
+# Pickle Files
+*.pkl
+
 # C extensions
 *.so
 
@@ -30,6 +33,7 @@ nosetests.xml
 *.mo
 
 # Mr Developer
+.idea
 .mr.developer.cfg
 .project
 .pydevproject
